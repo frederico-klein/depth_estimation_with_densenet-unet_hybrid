@@ -23,9 +23,7 @@
 
 import math
 import cv2
-import numpy as np
 from torchvision import transforms
-import matplotlib.pyplot as plt
 
 HEIGHT = 228
 WIDTH = 304
@@ -60,12 +58,13 @@ def img_transform(img):
 
 
 def show_img_and_pred(img, depth):
+    import matplotlib.pyplot as plt
+
     """Plot an image and a corresponding prediction next to each other."""
     plt.figure()
     plt.subplot(1, 2, 1)
     plt.imshow(img)
 
     plt.subplot(1, 2, 2)
-    pred = np.transpose(depth, (1, 2, 0))
-    plt.imshow(pred[:, :, 0])
+    plt.imshow(depth)
     plt.show()
