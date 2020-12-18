@@ -24,6 +24,7 @@ I can do 20fps just fine (on a 1080Ti), but the results aren't great. I've added
 
 Perhaps you need to can retrain for your environment with a kinect or something to get it slightly better.
 
+_____________________________________________________________
 ****Copypaste from Karoly's repo, for reference:***
 
 ### Guide
